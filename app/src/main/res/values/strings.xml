@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">SoberAndroidApp</string>
-    <string name="button_text">APPLY FILTER</string>
+    <string name="button_sel">SELECT IMAGE</string>
+    <string name="button_proc">APPLY FILTER</string>
     <string name="desc">Image to filter</string>
 </resources>
