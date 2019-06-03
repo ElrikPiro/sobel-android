@@ -22,7 +22,8 @@
         android:text="@string/button_proc"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="681dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="select" />
 
     <Button
         android:id="@+id/ProcessImage"
@@ -31,6 +32,7 @@
         android:text="@string/button_sel"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="633dp" />
+        tools:layout_editor_absoluteY="633dp"
+        android:onClick="applyFilter" />
 
 </android.support.constraint.ConstraintLayout>
