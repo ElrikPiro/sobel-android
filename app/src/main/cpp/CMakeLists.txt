@@ -43,10 +43,10 @@ target_link_libraries( # Specifies the target library.
                        # included in the NDK.
                        ${log-lib} )
 
-set(OpenCV_DIR "../../../../android-opencv/opencv/src/sdk/native/jni")
-find_package(OpenCV REQUIRED)
+set(OpenCV_DIR "../../../../opencv/native/jni")
+find_package( OpenCV REQUIRED )
 message(STATUS "OpenCV libraries: ${OpenCV_LIBS}")
-target_link_libraries(YOUR_TARGET_LIB ${OpenCV_LIBS})
+target_link_libraries(sobellib ${OpenCV_LIBS})
 
 find_package( OpenMP REQUIRED )
 if(OPENMP_FOUND)

@@ -5,9 +5,9 @@
 #include <cstring>
 #include <string>
 
-using namespace cv
+using namespace cv;
 
-int sobel(Mat);
+int sobel(Mat*);
 int sum(int[3][3],Mat*, int i, int j);
 unsigned char usqrt(unsigned char S);
 
@@ -33,7 +33,7 @@ Java_com_gmail_david_baselga_soberandroidapp_MainActivity_sobelFilter(
     std::string file(sourceFile);
     std::string extension;
     extension = file.substr(file.find_last_of("."));
-    outputFile(file.substr(0,file.find_last_of(".")) + std::string("_output") + extension);
+    outputFile = std::string(file.substr(0,file.find_last_of(".")) + std::string("_output") + extension);
     imwrite( outputFile , sobelimg );
 
     return env->NewStringUTF(outputFile.c_str());
